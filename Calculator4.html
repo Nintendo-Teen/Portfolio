@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Calculator</title>
+</head>
+<body>
+<table>
+<tr>
+<td>Enter Expression: </td>
+<td><input type="text" name="res" value="" id="res"></td>
+</tr>
+<tr>
+
+    
+    <td></td>
+    <td style="text-align:center"> <button type="button" name="calculate"
+    onclick="Calculate('calculate')"> Evaluate </button> 
+    
+    </table>
+    <script type="text/javascript">
+ 
+
+    function Calculate(button)
+    {
+        var res = document.getElementById('res').value;
+        var evalRes = eval(res);
+        document.getElementById('res').value = evalRes;
+    }
+
+
+
+</script>
+
+<button type="button" name="goCalc5"
+onclick="location.href='Calculator5.html'"> Go to final version of Calcuator </button> 
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+body {
+    background-color: rgb(208, 243, 255);
+  }
+  
+  h1 {
+    color: rgb(0, 100, 128);
+    margin-left: center;
+  }
+
+  .Headline {
+    color:rgb(0, 255, 255)
+  }
+
+  .Favs {
+    color:rgb(9, 40, 0)
+  }
+
+  .Genre {
+    color:rgb(54, 0, 19)
+  }
+  .center {
+    margin-left: 5px;
+  }
+  table, th, td {
+    border: 3px solid rgb(0, 0, 0);
+  }
+  .img {
+    border-radius: 25px;
+  }
+  #newcolour {
+    color: rgb(77, 0, 33);
+    }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Calculator</title>
+</head>
+<body>
+<table>
+<tr>
+<td>1st Number: </td>
+<td> <input type="text" name="n1" value="" id="n1"> </td>
+</tr>
+<tr>
+<td>2nd Number: </td>
+<td><input type="text" name="n2" value="" id="n2"></td>
+</tr>
+<tr>
+<td>Result: </td>
+<td><input type="text" name="res" value="" disabled id="res"></td>
+</tr>
+<tr>
+    
+    <td></td>
+    <td style="text-align:center"> <button type="button" name="buttonone"
+    onclick="Calculate('buttonone')"> + </button> 
+    <button type="button" name="buttontwo"
+    onclick="Calculate('buttontwo')"> - </button> 
+    <button type="button" name="buttonthree"
+    onclick="Calculate('buttonthree')"> * </button> 
+    <button type="button" name="buttonfour"
+    onclick="Calculate('buttonfour')"> / </button> </td>
+    
+        
+    
+    
+    
+    </table>
+    <script type="text/javascript">
+ 
+
+    function Calculate(button)
+    {
+    var n1 = document.getElementById('n1').value;
+    var n2 = document.getElementById('n2').value;
+    
+    if (button == "buttonone")
+    {
+        var res = parseFloat(n1) + parseFloat(n2);
+    }
+    else if (button == "buttontwo")
+    {
+        var res = parseFloat(n1) - parseFloat(n2);
+    }
+    else if (button == "buttonthree")
+    {
+        var res = parseFloat(n1) * parseFloat(n2);
+    }
+    else if (button == "buttonfour")
+    {
+        var res = parseFloat(n1) / parseFloat(n2);
+    }
+    document.getElementById('res').value = res;
+    }
+
+
+
+</script>
+
+<button type="button" name="goCalc4"
+onclick="location.href='Calculator4.html'"> Go to next version of Calcuator </button> 
+
+
+</body>
+</html>

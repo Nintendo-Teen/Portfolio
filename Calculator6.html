@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" type = "text/css" href=style.css>
+</head>
+<body>
+<table>
+<tr>
+<td><input type="text" name="calculator" value="" id = "calculator" disabled></td>
+<td></td>
+<td style="text-align:center"> <button type="clear" name="clear"
+onclick="Clear('clear')"> Clear </button> 
+</tr>
+<tr>
+
+    <td>
+        <button type="button" name="seven"
+        onclick="Seven('seven')"> 7 </button> 
+        <button type="button" name="eight"
+        onclick="Eight('eight')"> 8 </button>
+         <button type="button" name="nine"
+        onclick="Nine('nine')"> 9 </button> 
+        <button type="button" name="divide"
+        onclick="Divide('divide')"> ÷ </button> 
+    </td>
+</tr>
+<tr>
+    <td>
+        <button type="button" name="four"
+        onclick="Four('four')"> 4 </button> 
+        <button type="button" name="five"
+        onclick="Five('five')"> 5 </button>
+        <button type="button" name="six"
+        onclick="Six('six')"> 6 </button> 
+        <button type="button" name="multiply"
+        onclick="Multiply('multiply')"> x </button> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" name="one"
+            onclick="One('one')"> 1 </button> 
+            <button type="button" name="two"
+            onclick="Two('two')"> 2 </button>
+            <button type="button" name="three"
+            onclick="Three('three')"> 3 </button> 
+            <button type="button" name="subtract"
+            onclick="Subtract('subtract')"> - </button> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" name="zero"
+                onclick="Zero('zero')"> 0 </button> 
+                <button type="button" name="decimal"
+                onclick="Decimal('decimal')"> . </button>
+                <button type="button" name="equal"
+                onclick="Equal('equal')"> = </button> 
+                <button type="button" name="addition"
+                onclick="Addition('addition')"> + </button> 
+                </td>
+ 
+    
+            </table>
+            <script type="text/javascript">
+
+            function Zero()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += "0";
+            }
+            function One()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += "1";
+            }
+            function Two()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += "2";
+            }
+            function Three()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += "3";
+            }
+            function Four()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += "4";
+            }
+            function Five()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += "5";
+            }
+            function Six()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += "6";
+            }
+            function Seven()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += "7";
+            }
+            function Eight()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += "8";
+            }
+            function Nine()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += "9";
+            }
+            function Decimal()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += ".";
+            }
+            function Divide()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += " / ";
+            }
+            function Multiply()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += " * ";
+            }
+            function Subtract()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += " - ";
+            }
+            function Addition()
+            {
+            var calculate = document.getElementById('calculator');
+            calculate.value += " + ";
+            }
+
+            function Clear()
+            {
+            document.getElementById('calculator').value = "";
+            //calculate = Reset();
+            }
+
+            function Equal()
+            {
+            var calculator = document.getElementById('calculator').value;
+            var answer = eval(calculator);
+            document.getElementById('calculator').value = answer;
+            }
+
+</script>
+
+<br>
+
+<button type="button" name="retmain"
+onclick="location.href='main.html'"> Go to Main Page </button> 
+
+
+
+</body>
+</html>

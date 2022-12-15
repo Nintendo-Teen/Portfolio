@@ -1,0 +1,27 @@
+button {
+    font-size: medium;
+    background-color: #005858;
+    border-color: #002323;
+    color: white;
+    font-family:cursive;
+    font-weight: bold;
+    padding: 10px 24px;
+}
+h1{
+    font-family: cursive;
+    font-weight: bold;
+    color:rgb(90, 184, 184);
+}
+input{
+    padding: 10px 15px;
+    border-color: rgb(0, 35, 35);
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: large;
+}
+body{
+    background-image: -moz-linear-gradient(#002323, #005858);
+    background-repeat: no-repeat;
+    height: 1000px;
+}
